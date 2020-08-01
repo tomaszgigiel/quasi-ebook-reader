@@ -10,7 +10,8 @@
 
 <body>
 
-<textarea id="page1" name="page1" style="width:100vw;height:100vh"></textarea>
+<textarea id="page1" name="page1" style="width:20vw;height:20vh"></textarea>
+<textarea id="page2" name="page2" style="width:20vw;height:20vh"></textarea>
 
 <script>
 
@@ -28,7 +29,8 @@ var sample = {
 		"salt":"yy6LtLjgErc=",
 		"ct":"iZzb2knLswQQ3L1V4QXRlA2JvQ=="};
 
-document.getElementById("page1").innerHTML = sjcl.decrypt("mleko-krzeslo-238-pilot-samolot", sjcl.encrypt("mleko-krzeslo-238-pilot-samolot", "abc"));
+document.getElementById("page1").innerHTML = sjcl.encrypt("mleko-krzeslo-238-pilot-samolot", "abc");
+document.getElementById("page2").innerHTML = sjcl.decrypt("mleko-krzeslo-238-pilot-samolot", sjcl.encrypt("mleko-krzeslo-238-pilot-samolot", "abc"));
 
 </script>
 
