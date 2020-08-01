@@ -28,7 +28,7 @@ var sample = {
 		"salt":"yy6LtLjgErc=",
 		"ct":"iZzb2knLswQQ3L1V4QXRlA2JvQ=="};
 
-document.getElementById("page1").innerHTML = sjcl.encrypt("mleko-krzeslo-238-pilot-samolot", sample);
+document.getElementById("page1").innerHTML = sjcl.decrypt("mleko-krzeslo-238-pilot-samolot", sjcl.encrypt("mleko-krzeslo-238-pilot-samolot", "abc"));
 
 </script>
 
