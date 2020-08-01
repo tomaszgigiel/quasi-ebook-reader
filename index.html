@@ -15,9 +15,21 @@
 
 var url = 'https://raw.githubusercontent.com/tomaszgigiel/quasi-ebook-reader/master/books/0001.txt';
 
+var sample = {
+		"iv":"e+XWMge5un49LVme7Nua2A==",
+		"v":1,
+		"iter":1000,
+		"ks":256,
+		"ts":128,
+		"mode":"ccm",
+		"adata":"",
+		"cipher":"aes",
+		"salt":"yy6LtLjgErc=",
+		"ct":"iZzb2knLswQQ3L1V4QXRlA2JvQ=="};
+
 fetch(url)
   .then(response => response.text())
-  .then(text => {document.getElementById("page1").innerHTML = sjcl.encrypt("mleko-krzeslo-238-pilot-samolot", text)});
+  .then(text => {document.getElementById("page1").innerHTML = sjcl.encrypt("mleko-krzeslo-238-pilot-samolot", sample)});
 
 </script>
 
