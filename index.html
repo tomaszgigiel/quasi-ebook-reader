@@ -13,6 +13,12 @@
 
 <script>
 
+var url = 'https://raw.githubusercontent.com/tomaszgigiel/quasi-ebook-reader/master/books/0001.txt';
+
+fetch(url)
+  .then(response => response.text())
+  .then(text => {document.getElementById("page1").innerHTML = sjcl.encrypt("mleko-krzeslo-238-pilot-samolot", text)});
+
 </script>
 
 </body>
