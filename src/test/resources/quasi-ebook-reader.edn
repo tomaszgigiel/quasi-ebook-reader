@@ -1,0 +1,7 @@
+[
+ {
+  :quasi-ebook-reader.input-path "src/test/resources/plaintext.txt"
+  :quasi-ebook-reader.output-path "src/test/resources/ciphertext.txt"
+  :quasi-ebook-reader.password "password"
+  }
+]
